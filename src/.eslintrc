@@ -1,0 +1,29 @@
+{
+  "rules": {
+    "no-console": [1],
+    "indent": [2, 4, { "SwitchCase": 1}],
+    "quotes": [2, "single"],
+    "comma-dangle": [1, "always-multiline"],
+    "prefer-const": [2],
+    "no-unused-vars": [1],
+    "no-var": [2],
+    "no-undef": ["error"]
+  },
+
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true,
+  },
+
+  "parserOptions": {
+
+        "ecmaVersion": 6,
+        "sourceType": "module"
+  }
+
+}
