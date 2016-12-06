@@ -72,7 +72,6 @@ function init() {
     });
     renderer.setClearColor('white');
     renderer.setSize(window.innerWidth, window.innerHeight);
-    mouseEventsHandler.updateCamera(camera);
 
     document.body.appendChild(renderer.domElement);
     window.addEventListener( 'resize', onWindowResize, false );
@@ -90,6 +89,7 @@ function animate() {
     camera.position.x = (Math.sin( t/1000) * 1);
     camera.position.y = 0;
     camera.position.z = (Math.cos( t/1000) * 1) + 8;
+    mouseEventsHandler.updateCamera(camera);
 
     renderer.render(scene, camera );
 }
